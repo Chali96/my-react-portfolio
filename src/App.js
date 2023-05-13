@@ -9,6 +9,9 @@ function App() {
       <h1>
         Hello
       </h1>
+      <button>
+        click here
+      </button>
       <Home />
       <Contact />
       <About />
