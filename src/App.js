@@ -5,6 +5,7 @@ import About from './components/About';
 import Footer from "./components/Footer"
 import Header from './components/Header';
 
+
 function App() {
   return (
 <BrowserRouter>
@@ -14,7 +15,6 @@ function App() {
   <Route path='/contact' element={<Contact/>} />
   <Route path='/about' element={<About/>} />
 </Routes>
-
 <Footer />
 </BrowserRouter>
   );
