@@ -5,9 +5,11 @@ const Home = () => {
         <div className="container">
           <h2> Home page  </h2>
 
-          <Link className='btntext' to="/about">           
-           <button className='btn'> About me! </button>
-          </Link>
+                 
+           <button className='btn'>  <Link className='btntext' to="/about" />  
+           About me! 
+           </button>
+         
 
           
 
