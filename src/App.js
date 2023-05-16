@@ -4,6 +4,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Footer from "./components/Footer"
 import Header from './components/Header';
+import Index from './index.css'
 
 
 function App() {

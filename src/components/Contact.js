@@ -3,7 +3,7 @@ import Header from './Header';
 
 const Contact = () => {
     return (
-        <div>
+        <div className='container'>
             <Header/>
             <h3>
                 Contact page!

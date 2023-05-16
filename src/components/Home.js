@@ -1,9 +1,8 @@
-import { Button } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div className="App">
+        <div className="container">
           <h2> Home page  </h2>
 
           <Link className='btntext' to="/about">           
