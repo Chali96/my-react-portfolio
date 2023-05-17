@@ -1,9 +1,12 @@
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+
+
 const Footer = () => {
     return (
-        <div className="container">
-            <h3>
-                Footer
-            </h3>
+        <div className="footer">
+                 <FaFacebook />
+                <FaInstagram />
+                <FaTwitter />
         </div>
     );
 };

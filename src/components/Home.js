@@ -8,17 +8,12 @@ const Home = () => {
           <h2> Home page  </h2>
 
                  
-          
-           
            <Link className='btntext' to="/about">
-             <button className='btn'>  About me!   </button>
+            
+             <button className='btn'>  About me!</button>
             </Link>  
           
-          
            <img src={image1} alt="first image" />
-
-
-          
 
        </div>
     );
