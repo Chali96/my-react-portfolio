@@ -1,9 +1,12 @@
+import header from './images/header.jpeg';
+
 const Header = () => {
     return (
      <div className="container">
         <h1>
-            This is Header
+            Chali Mohamedsani
         </h1>
+        <img src={header} alt="first image" />
      </div>
     );
 };

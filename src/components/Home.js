@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import image1 from './images/image1.jpeg';
+
 
 const Home = () => {
     return (
@@ -6,10 +8,15 @@ const Home = () => {
           <h2> Home page  </h2>
 
                  
-           <button className='btn'>  <Link className='btntext' to="/about" />  
-           About me! 
-           </button>
-         
+          
+           
+           <Link className='btntext' to="/about">
+             <button className='btn'>  About me!   </button>
+            </Link>  
+          
+          
+           <img src={image1} alt="first image" />
+
 
           
 
