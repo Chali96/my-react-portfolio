@@ -6,7 +6,7 @@ const Header = () => {
         <h1>
             Chali Mohamedsani
         </h1>
-        <img src={header} alt="first image" />
+        <img className='headerimg' src={header} alt="first image" />
      </div>
     );
 };

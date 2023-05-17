@@ -20,9 +20,9 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            <FaFacebook onClick={handleFBClick} style={{ cursor: 'pointer' }} />
-      <FaInstagram onClick={handleIGClick} style={{ cursor: 'pointer' }} />
-      <FaTwitter onClick={handleIGClick} style={{ cursor: 'pointer' }} />
+            <FaFacebook className='icon' onClick={handleFBClick} style={{ cursor: 'pointer' }} />
+      <FaInstagram className='icon' onClick={handleIGClick} style={{ cursor: 'pointer' }} />
+      <FaTwitter className='icon' onClick={handleIGClick} style={{ cursor: 'pointer' }} />
         </div>
     );
 };
