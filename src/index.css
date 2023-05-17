@@ -65,3 +65,44 @@ max-width: 650px;
 .homeimg{
   height: 550px;
 }
+
+.aboutbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.btn1, .btn2{
+  color: rgb(0, 0, 0);
+  margin: 2rem;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(199, 205, 86, 0.4);
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 32px;
+}
+
+.btn1:hover{
+  background-color: rgb(216, 87, 108);
+}
+
+.btn2:hover{
+  background-color: rgb(104, 169, 82);
+}
+
+.aboutimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  margin: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+}
