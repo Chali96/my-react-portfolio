@@ -43,3 +43,7 @@ body {
   align-items: center;
   flex-direction: row;
 }
+
+.icon{
+  margin: 10px;
+}
