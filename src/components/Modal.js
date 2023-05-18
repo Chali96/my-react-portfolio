@@ -1,9 +1,14 @@
-const Modal = () => {
+import { AiOutlineClose } from 'react-icons/ai';
+
+const Modal = ({children, close}) => {
     return (
-        <div>
-            <h3>
-                Modal
-            </h3>
+        <div className="overlay"> 
+            <div className="content">
+                <AiOutlineClose onClick={close}/>
+               {children} 
+            </div>            
         </div>
-    )
-}
+    );
+};
+
+export default Modal;
