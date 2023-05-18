@@ -6,7 +6,7 @@ const Contact = () => {
         <div className='container'>
             <Header/>
             <h3>
-                Contact page!
+                
             </h3>
         </div>
     );
