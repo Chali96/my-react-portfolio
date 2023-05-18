@@ -1,4 +1,5 @@
 import { AiOutlineClose } from 'react-icons/ai';
+// i imported the x button
 
 const Modal = ({children, close}) => {
     return (
