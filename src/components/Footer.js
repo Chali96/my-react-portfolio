@@ -19,6 +19,7 @@ const Footer = () => {
   }
 
     return (
+      // here i added the links to the socials
         <div className="footer">
             <FaFacebook className='icon' onClick={handleFBClick} style={{ cursor: 'pointer' }} />
       <FaInstagram className='icon' onClick={handleIGClick} style={{ cursor: 'pointer' }} />
