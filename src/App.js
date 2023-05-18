@@ -13,6 +13,16 @@ function App() {
   
   return (
 <BrowserRouter>
+<div className='container-modal'>
+  {status && (
+    <Modal close={() => setStatus(false)}>
+      <div className='container-modal'>
+        <p>Hey, I hope you have a beautiful day today!</p>
+      </div>
+    </Modal>
+  )}
+<button onClick={() => setStatus(true)} className="btn">For you!</button>
+</div>
 <Header />
 <Routes>
   <Route path='/' element={<Home/>} />
@@ -20,17 +30,6 @@ function App() {
   <Route path='/about' element={<About/>} />
 </Routes>
 <Footer />
-
-<div className='container'>
-  {status && (
-    <Modal>
-      <div className='container-modal'>
-        <p>Hey, I hope you have a beautiful day today!</p>
-      </div>
-    </Modal>
-  )}
-<button onClick={() => setStatus(true)} className="btn">Click Me!</button>
-</div>
 </BrowserRouter>
   );
 }

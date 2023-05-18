@@ -187,4 +187,15 @@ margin-top: 80px;
   color: black;
 }
 
+.close {
+  display: flex;
+  margin-left: auto;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.container-modal{
+  margin-left: 50px;
+}
+
 
