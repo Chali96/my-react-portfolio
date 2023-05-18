@@ -4,14 +4,14 @@ import { useState } from "react";
 const Contact = () => {
   const [name, setName] = useState ('');
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState('');
   const [submittedMessage, setSubmittedMessage] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefaulr();
+    e.preventDefault();
 
 
-    setSubmittedMessage(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`)
+    setSubmittedMessage(`Name:  ${name} \n Email: ${email} \n Message: ${message}`)
 
     setName('');
     setEmail('');
@@ -20,10 +20,10 @@ const Contact = () => {
 
     return (
         <div className='container'>
-            <form onSubmit={handleSubmit}>
+            <form className="formtext" onSubmit={handleSubmit}>
                 <label>
                     Name:
-                    <input
+                    <input className="input"
                      type={name}
                      value={name}
                      onChange={(e) => setName(e.target.value)}
@@ -32,7 +32,7 @@ const Contact = () => {
                <br/>
                <label>
                     Email:
-                    <input
+                    <input className="input"
                      type={email}
                      value={email}
                      onChange={(e) => setEmail(e.target.value)}
@@ -41,19 +41,21 @@ const Contact = () => {
            <br/>
            <label>
                     Message:
-                    <textarea
+                    <textarea className="input-msg"
                      value={message}
                      onChange={(e) => setMessage(e.target.value)}
                     />
                 </label>
 
               <br/>
-              <button type="submit">Submit</button>  
+              <button className="btn-submit" type="submit">Submit</button>  
               </form>
-
-            <h3>
-                
-            </h3>
+              {submittedMessage && (
+                <div className="submit-msg"> 
+                    <h3>Thank you for your Message!</h3>
+                    <p>{submittedMessage}</p>
+                </div>
+              )}
         </div>
     );
 };

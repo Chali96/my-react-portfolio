@@ -16,7 +16,7 @@ body {
   flex-direction: column;
 }
 
-.btn {
+.btn, .btn-submit {
   color: rgb(0, 0, 0);
   margin: 2rem;
   width: 100px;
@@ -32,7 +32,7 @@ body {
 }
 
 
-.btn:hover{
+.btn:hover, .btn-submit:hover{
   background-color: pink;
 }
 
@@ -120,3 +120,46 @@ margin-left: 500px;
 .navbtn:hover{
   background-color: palevioletred;
 }
+
+.formtext{
+  width: 444px;
+height: 473px;
+background: rgba(220, 220, 220, 0.06);
+box-shadow: 4px 5px 8px -1px rgba(0, 0, 0, 0.3);
+}
+
+.input{
+  width: 265px;
+height: 35px;
+background: rgba(255, 255, 255, 0.7);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 2px 8px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(25px);
+border-radius: 35px;
+margin: 30px;
+margin-left: 50px;
+}
+
+.input-msg{
+  width: 265px;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 2px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(25px);
+  border-radius: 35px;
+margin-top: 30px;
+margin-left: 50px;
+}
+
+.btn-submit{
+margin-left: 160px;
+margin-top: 80px;
+}
+
+.submit-msg{
+  width: 444px;
+  height: 473px;
+  background: rgba(220, 220, 220, 0.06);
+  box-shadow: 4px 5px 8px -1px rgba(0, 0, 0, 0.3);
+  
+}
+
