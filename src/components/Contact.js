@@ -2,6 +2,7 @@ import { useState } from "react";
 
 
 const Contact = () => {
+  // this is the state variabless for name, email, message and submitted message 
   const [name, setName] = useState ('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -10,9 +11,10 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-
+ // set the submitted message with a form a data
     setSubmittedMessage(`Name:  ${name} \n Email: ${email} \n Message: ${message}`)
 
+    // reset the form fields
     setName('');
     setEmail('');
     setMessage('');
@@ -20,8 +22,10 @@ const Contact = () => {
 
     return (
         <div className='container'>
+          {/*FORM */}
             <form className="formtext" onSubmit={handleSubmit}>
                 <label>
+                  {/*the name input */}
                     Name:
                     <input className="input"
                      type={name}
@@ -31,6 +35,7 @@ const Contact = () => {
                 </label>
                <br/>
                <label>
+                {/* the email input */}
                     Email:
                     <input className="input"
                      type={email}
@@ -39,7 +44,7 @@ const Contact = () => {
                     />
                 </label>
            <br/>
-           <label>
+           <label> {/* message input */}
                     Message:
                     <textarea className="input-msg"
                      value={message}
@@ -50,6 +55,7 @@ const Contact = () => {
               <br/>
               <button className="btn-submit" type="submit">Submit</button>  
               </form>
+              {/*the button for submitting */}
               {submittedMessage && (
                 <div className="submit-msg"> 
                     <h3>Thank you for your Message!</h3>
@@ -61,3 +67,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
