@@ -6,6 +6,7 @@ const Home = () => {
     return (
         <div className="container">
           <h2> Welcome </h2>
+          {/*I discribe myself here */}
            <p className='text'>
             My name is Chali Mohamedsani. I got into coding 2022 october and honestly
             today im happy i did. Its been a very fun but at the same time a very intense and 
@@ -13,12 +14,12 @@ const Home = () => {
             to. This course that i have been studying the past 4-5 months has really given me 
             so much. 
            </p>
-                 
+                 {/*Link the about page here */}
            <Link className='btntext' to="/about">
             
              <button className='btn'>  About me!</button>
             </Link>  
-          
+            {/*an image */}
            <img className='homeimg' src={image1} alt="first image" />
 
        </div>
@@ -26,3 +27,4 @@ const Home = () => {
 };
 
 export default Home;
+
