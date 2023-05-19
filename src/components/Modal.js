@@ -5,7 +5,8 @@ const Modal = ({children, close}) => {
     return (
         <div className="overlay"> 
             <div className="content">
-                
+
+                        {/*the close button, onlick and close */}
                 <AiOutlineClose className='close' onClick={close}/>
                {children} 
             </div>            
@@ -14,3 +15,4 @@ const Modal = ({children, close}) => {
 };
 
 export default Modal;
+
