@@ -15,6 +15,7 @@ const About = () => {
             <br/>
             2. I dont like lasagne
          </p>
+         
         <div className='aboutbtn'>
         <button className='btn1'> 1 </button>
         <button className='btn2'> 2 </button>
